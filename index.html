@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Flexbox Layout</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">FlexSite</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="main-content">
+      <h2 id="welcome-text">Welcome to FlexSite</h2>
+      <p>This layout uses Flexbox and adapts to different screen sizes with media queries.</p>
+
+      <h3 id="features">Responsive Layout with CSS</h3>
+      <p>Flexbox makes it easy to build responsive web layouts. It allows you to align, space, and order elements dynamically based on screen size.</p>
+
+      <h4>🔧 Flexbox Basics:</h4>
+      <ul>
+        <li><code>display: flex;</code> – Enables flexbox on a container</li>
+        <li><code>justify-content</code> – Controls horizontal alignment</li>
+        <li><code>align-items</code> – Controls vertical alignment</li>
+        <li><code>flex-direction</code> – Controls direction (row or column)</li>
+      </ul>
+
+      <h4>📱 Media Queries:</h4>
+      <p>Media queries let your layout adapt based on device screen width.</p>
+      <pre><code>@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}</code></pre>
+      <p>This example stacks elements vertically on smaller screens.</p>
+
+      <button id="change-text-btn">Change Welcome Text</button>
+      <button id="toggle-box-btn">Add/Remove Box</button>
+      <div id="dynamic-box" style="margin-top: 1rem;"></div>
+    </section>
+
+    <aside class="sidebar">
+      <h3 id="about">Sidebar</h3>
+      <p>Want to learn more about responsive design? Start by mastering Flexbox and media queries. They're essential tools for modern, mobile-first web development.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FlexSite</p>
+  </footer>
+</body>
+</html>
